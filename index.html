@@ -1,7 +1,125 @@
 <!DOCTYPE html>
+
 <html>
+
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>TEDxPlaceMuseux</title>
+        <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+		<link rel="stylesheet" href="CSS/screen.css">
+
+		<base target=”_top”>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
 	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+
+    	<header>
+    		<nav class="nav-bar">
+      			<ul class="group">	
+	      	  		<div class="logo-container">
+	      	  			<li><a href="index.html"><img src="Images/logo.png" alt="Site Logo"></a></li>
+	      	  		</div>
+	      	  		<div class="written-links"> 
+	      	  			<!-- for floating links right -->
+	      	  			<li><a href="about.html">About</a></li> 
+	          			<!-- this section includes theme-->
+		          		<li><a href="speakers.html">Speakers & Performers</a></li>
+		          		<li><a href="schedule.html">Schedule</a></li> 
+		          		<li><a href="team.html">Meet the Team</a></li>
+		          		<li><a href="partners.html">Partners</a></li> 
+	      	  		</div>
+          		</ul>
+          	</nav>
+        </header>
+
+    	<div class="container">
+	        <div class="theme-wrapper">
+	        	<img src="Images/temp_theme.png" alt="Theme">
+	        </div>
+
+	        <div class="content-area group">
+
+	        	<section class="summer-of-solutions">
+	        		<h1>Summer of Solutions</h1>
+	        		<div class="row">
+	        			<div class="col col-xs-12 col-sm-6">
+	        				<img src="Images/summer-of-solutions.png" alt="Summer of Solutions">
+	        			</div>
+	        		
+		        		<div class="col col-xs-12 col-sm-6">
+		        			<p>This is some descriptive text for the SOS event. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		        			<p>This is some descriptive text for the SOS event. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		        		</div>
+	        		</div> <!-- row -->
+	        	</section>
+
+	    		<section class="what-is-TEDxPlaceMuseux">
+		            <h1>What is TEDxPlaceMuseux?</h1>
+		            <p>
+		                At Sciences Po in the heart of Reims, the former Jesuit College today hosts almost 1600 young, forward-thinking, socially engaged learners. Independently organized by Sciences Po students, TEDxPlaceMuseux seeks to combine the spirit of learning and adaptation to an increasingly globalized world by featuring contemporary visionary speakers in this Age of Change. By exploring facets, opportunities, and engagement in a developing world, TEDxPlaceMuseux hopes to spark ideas, action, and hopefulness for current and prospective leaders. Join us on February 27th, 2021 to take part in a remarkable conference that explores innovation and connection in this Age of Change.
+		            </p>
+		            <p>
+		            	TEDxPlaceMuseux is a student-run initiative that invites curiosity and engagement to the table to encourage discourse on multidimensional change. We seek to actively promote a diversity of perspectives to inspire intersectional solutions across the global community. 
+		            </p>
+	            	<div class="learn-more">
+	            		<p class="centered-text"><a href="about.html">Learn More</a></p>
+	            	</div>
+		        </section> <!-- /who-are-we-->
+
+		        <section class="">
+		        	<h1>About the Event</h1>
+		        	<p>TEDxPlaceMuseux will be held on February 27th, 2021 with open doors at 9:30 AM in the Grand Amphitheater LS01 (1 Place Museux). We hope to see you there.</p>
+		        </section>
+
+		      	<section class="email-form">
+		      		<h4>Join our email list to receive updates on the conference:</h4>
+			      	<form name="submit-to-google-sheet">
+			      		<label for="email">Email Address: </label>
+			      		<input id="email" type="email" name="email">
+			      		<div class="row">
+			      			<div class="col col-xs-6">
+					      		<label for="first-name">First Name: </label>
+					      		<input id="first-name" type="text" name="firstName">
+			      			</div>
+			      		
+				      		<div class="col col-xs-6">
+					      		<label for="last-name">Last Name: </label>
+					      		<input id="last-name" type="text" name="lastName">	
+				      		</div>
+			      		</div>
+			      		<button type="submit" id="submit-form" value="Subscribe">Subscribe</button>
+			  		</form>
+		      	</section> <!-- /email-form -->
+
+		      	<script>
+					const scriptURL = 'https://script.google.com/macros/s/AKfycby5ezUZz-S5_xT1zfZbkv_qZreu4cEg_UtyhsXp4vqFphhfGP_X/exec'
+					const form = document.forms['submit-to-google-sheet']
+
+					form.addEventListener('submit', e => {
+						e.preventDefault()
+						fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+						.then(response => console.log('Success!', response))
+						.catch(error => console.error('Error!', error.message))
+					})
+				</script>
+
+		    </div> <!-- </content-area> -->
+  
+			<footer>
+			    <nav class="ui-menu">
+			    	<ul>
+			    		<li class="ui-facebook"><a href="https://www.facebook.com/TEDxplacemuseux/" target="blank">Facebook</a></li>
+			    		<li class="ui-linkedin"><a href="https://www.linkedin.com/company/tedxplacemuseux" target="blank">LinkedIn</a></li>
+			    		<li class="ui-instagram"><a href="" target="blank">Instagram</a></li>
+			    	</ul>
+			    </nav>
+			    <p>Website designed by Peter Chen</p>
+			    <p>&copy; 2020 TEDxPlaceMuseux.</p>
+			</footer>
+
+		</div> <!-- container -->
 	</body>
+
 </html>
