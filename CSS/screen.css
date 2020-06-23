@@ -196,8 +196,9 @@ button:focus {
 	margin-top: 0;
 }
 
-.social-links a{
+.social-links a {
 	color: #b80000;
+}
 }
 
 /* End of About-page CSS */
@@ -271,6 +272,14 @@ footer {
 footer p {
 	color: #adadad;
 	text-indent: 0;
+}
+
+.linkedin a {
+	color: #adadad;
+}
+
+.linkedin a:hover {
+	color: #bababa;
 }
 
 /* social media sprites */
