@@ -181,7 +181,9 @@ button:focus {
 	margin-top: 20px;
 }
 
-
+.hidden {
+	display: none;
+}
 /* End of Email Form Styling */
 
 
