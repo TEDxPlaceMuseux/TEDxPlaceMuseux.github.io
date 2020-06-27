@@ -49,6 +49,30 @@ p {
 	margin-top: 0px;
 }
 
+@media screen and (min-width: 1280px) {
+	.content-area {
+		max-width: 900px;
+	}
+}
+@media screen and (min-width: 2160px) {
+	.content-area {
+		margin-top: 60px;
+	}
+}
+
+@media screen and (min-width: 2880px) {
+	.content-area {
+		max-width: 1200px;
+		margin-top: 80px;
+	}
+}
+
+@media screen and (min-width: 5760px) {
+	.content-area {
+		max-width: 2000px;
+	}
+}
+
 .content-area p {
 	font-size: 80%;
 }
@@ -92,6 +116,61 @@ p {
 	overflow: hidden;
 }
 
+.pop-up {
+	padding: 15px 15px 20px 15px;
+	height: 92.5%;
+}
+
+@media screen and (min-width: 1440px) {
+	.pop-up {
+		padding: 15px 15px 25px 15px;
+		height: 96%;
+	}
+}
+
+@media screen and (min-width: 2160px) {
+	.pop-up {
+		padding: 15px 15px 5px 15px;
+		height: 99%;
+	}
+}
+
+/*==================================================
+ * Effect 8 borrowed code hehe
+ * ===============================================*/
+.effect8
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.07) inset;
+       -moz-box-shadow:0 1px 4px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.07) inset;
+            box-shadow:0 1px 4px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.07) inset;
+}
+.effect8:before, .effect8:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
 /* Site navigation */
 
 .nav-bar {
@@ -100,6 +179,7 @@ p {
 	width: 100%;
 	background-color: white;
 	border-bottom: 3px solid #3b3b3b;
+	z-index: 1;
 }
 
 .nav-bar ul {
@@ -238,8 +318,29 @@ button:focus {
 .temp-speaker {
 	padding: 50px 50px;
 	margin-bottom: 10px;
-	border: 2px solid black;
+	border: 1px solid #023499;
 	background-color: #e7eff5;
+}
+
+/* I am so sorry for this garbage CS the pop-up boxes aren't aligned because the 3 col layout as opposed to 4 col for team page*/
+
+.speakers-page .pop-up {
+	padding: 15px 15px 5px 15px;
+	height: 92%;
+}
+
+@media screen and (min-width: 1440px) {
+	.speakers-page .pop-up {
+		padding: 15px 15px 5px 15px;
+		height: 96%;
+	}
+}
+
+@media screen and (min-width: 2160px) {
+	.speakers-page .pop-up {
+		padding: 15px 15px 5px 15px;
+		height: 98%;
+	}
 }
 
 /* End of Speakers specific CSS */
@@ -371,6 +472,15 @@ footer p {
 .col-xs-1 {width: 8.332%;}
 
 @media screen and (min-width: 768px) {
+	.row {
+		margin-right: -25px;
+	}
+
+	.col {
+		padding-right: 25px;
+		box-sizing: border-box;
+	}
+
 	.col-sm-11 {width: 91.662%;}
 	.col-sm-10 {width: 83.332%;}
 	.col-sm-9 {width: 75%;}
