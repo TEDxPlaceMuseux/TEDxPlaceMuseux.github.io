@@ -41,6 +41,8 @@ p {
 .content-area {
 	background-color: #FFF;
 	padding: 0 40px;
+	border-left: 12px solid #8c1904;
+	border-right: 12px solid #8c1904;
 	box-sizing: border-box;
 	max-width: 800px;
 	margin: 0 auto;
@@ -69,6 +71,10 @@ p {
 .centered-text {
 	text-indent: 0;
 	text-align: center;
+}
+
+.underline {
+	text-decoration: underline #b80000;
 }
 
 .remove-indent {
