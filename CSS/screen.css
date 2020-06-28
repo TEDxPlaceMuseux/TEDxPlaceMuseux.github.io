@@ -40,7 +40,7 @@ p {
 
 .content-area {
 	background-color: #FFF;
-	padding: 0 40px;
+	padding: 0 20px;
 	border-left: 12px solid #8c1904;
 	border-right: 12px solid #8c1904;
 	box-sizing: border-box;
@@ -49,27 +49,37 @@ p {
 	margin-top: 0px;
 }
 
+@media screen and (min-width: 288px) {
+	.content-area {
+		padding: 0 40px; 
+	}
+}
+
 @media screen and (min-width: 1280px) {
 	.content-area {
 		max-width: 900px;
 	}
 }
-@media screen and (min-width: 2160px) {
+@media screen and (min-width: 2000px) {
 	.content-area {
-		margin-top: 60px;
+		max-width: 1200px;
+		margin-top: 45px;
 	}
 }
 
 @media screen and (min-width: 2880px) {
 	.content-area {
-		max-width: 1200px;
-		margin-top: 80px;
+		max-width: 1500px;
+		margin-top: 60px;
 	}
 }
 
-@media screen and (min-width: 5760px) {
+@media screen and (min-width: 4320px) {
 	.content-area {
-		max-width: 2000px;
+		max-width: 2200px;
+		margin-top: 70px;
+		padding: 0 80px;
+		box-sizing: border-box;
 	}
 }
 
@@ -121,17 +131,40 @@ p {
 	height: 92.5%;
 }
 
-@media screen and (min-width: 1440px) {
+/* Pop-up boxes need to be better designed on screen size/zoom*/
+
+
+@media screen and (min-width: 1080px) {
 	.pop-up {
-		padding: 15px 15px 25px 15px;
-		height: 96%;
+		padding-bottom: 25px;
+		height: 94%;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	.pop-up {
+		height: 94%;
 	}
 }
 
 @media screen and (min-width: 2160px) {
 	.pop-up {
-		padding: 15px 15px 5px 15px;
-		height: 99%;
+		height: 95.5%;
+	}
+}
+
+@media screen and (min-width: 2880px) {
+	.pop-up {
+		padding-bottom: 15px;
+		height: 97.5%;
+	}
+}
+
+
+@media screen and (min-width: 4000px) {
+	.pop-up {
+		padding: 15px 15px 15px 15px;
+
 	}
 }
 
@@ -322,7 +355,7 @@ button:focus {
 	background-color: #e7eff5;
 }
 
-/* I am so sorry for this garbage CS the pop-up boxes aren't aligned because the 3 col layout as opposed to 4 col for team page*/
+/* I am so sorry for this garbage CS the tops/bottoms of the pop-up boxes aren't aligned because the 3 col layout as opposed to 4 col for team page*/
 
 .speakers-page .pop-up {
 	padding: 15px 15px 5px 15px;
