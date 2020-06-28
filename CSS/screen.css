@@ -4,6 +4,33 @@ html {
 	font-family: Tahoma, sans-serif;
 }
 
+/* fixes pop-up box/text-size based on zooming in/out*/
+@media only screen and (min-width: 1000px) {
+    html {
+        zoom: 1.15;
+        -moz-transform: scale(1.15);
+    }
+}
+@media only screen and (min-width: 1500px) {
+	html {
+		zoom: 1.5;
+		-moz-transform: scale(1.5);
+	}
+}
+@media only screen and (min-width: 2000px) {
+	html {
+		zoom: 1.7;
+		-moz-transform: scale(1.7);
+	}
+}
+@media only screen and (min-width: 2500px) {
+	html {
+		zoom: 1.9;
+		-moz-transform: scale(1.9);
+	}
+}
+
+
 body {
 	margin: 0;
 	padding: 0;
@@ -63,21 +90,18 @@ p {
 @media screen and (min-width: 2000px) {
 	.content-area {
 		max-width: 1200px;
-		margin-top: 45px;
 	}
 }
 
 @media screen and (min-width: 2880px) {
 	.content-area {
 		max-width: 1500px;
-		margin-top: 60px;
 	}
 }
 
 @media screen and (min-width: 4320px) {
 	.content-area {
 		max-width: 2200px;
-		margin-top: 70px;
 		padding: 0 80px;
 		box-sizing: border-box;
 	}
@@ -128,7 +152,7 @@ p {
 
 .pop-up {
 	padding: 15px 15px 20px 15px;
-	height: 92.5%;
+	height: 93.5%;
 }
 
 /* Pop-up boxes need to be better designed on screen size/zoom*/
@@ -137,26 +161,19 @@ p {
 @media screen and (min-width: 1080px) {
 	.pop-up {
 		padding-bottom: 25px;
-		height: 94%;
 	}
 }
 
 @media screen and (min-width: 2000px) {
 	.pop-up {
-		height: 94%;
-	}
-}
-
-@media screen and (min-width: 2160px) {
-	.pop-up {
-		height: 95.5%;
+		padding-bottom: none;
 	}
 }
 
 @media screen and (min-width: 2880px) {
 	.pop-up {
 		padding-bottom: 15px;
-		height: 97.5%;
+		height: 94%;
 	}
 }
 
@@ -164,9 +181,10 @@ p {
 @media screen and (min-width: 4000px) {
 	.pop-up {
 		padding: 15px 15px 15px 15px;
-
+		height: 96%;
 	}
 }
+
 
 /*==================================================
  * Effect 8 borrowed code hehe
@@ -504,7 +522,7 @@ footer p {
 .col-xs-2 {width: 16.662%;}
 .col-xs-1 {width: 8.332%;}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
 	.row {
 		margin-right: -25px;
 	}
@@ -527,7 +545,7 @@ footer p {
 	.col-sm-1 {width: 8.332%;}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 720px) {
 	.col-md-11 {width: 91.662%;}
 	.col-md-10 {width: 83.332%;}
 	.col-md-9 {width: 75%;}
