@@ -1,15 +1,13 @@
 # TEDxPlaceMuseux.github.io
 website hosted on GitHub
 
-Source code for the website. Mirrored at tedxplacemuseux.com. If you have something to say, either email us or file an issue.
+Source code for the website, mirrored at tedxplacemuseux.com. If you need to get in touch, feel free to [email us](tedxplacemuseux@gmail.com).
 
 ## Webmaster
 * Peter Chen
 
-
-
 ## License
-The MIT License [(MIT)] (https://tldrlegal.com/license/mit-license)
+The MIT License [(MIT)](https://tldrlegal.com/license/mit-license)
 
 Copyright (c) TEDxPlaceMuseux
 
