@@ -76,7 +76,7 @@ p {
 	margin-top: 0px;
 }
 
-@media screen and (min-width: 288px) {
+@media screen and (min-width: 700px) {
 	.content-area {
 		padding: 0 40px; 
 	}
@@ -262,6 +262,27 @@ p {
 .written-links {
 	float: right;
 }
+
+.topnav .icon {
+	display: none;
+}
+
+@media screen and (max-width: 675px) {
+	.topnav a { display: none; }
+	.topnav .icon { display: block; }
+}
+
+@media screen and (max-width: 675px) {
+	.topnav .responsive a { 
+		display: block;
+	}
+	.topnav .responsive a.icon { 
+		float: right;
+		text-align: right;
+	}
+}
+
+/* end of responsive navbar */
 
 .nav-bar img{
 	display: block;
@@ -509,7 +530,7 @@ footer p {
 .col-xs-2 {width: 16.662%;}
 .col-xs-1 {width: 8.332%;}
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 480px) {
 	.row {
 		margin-right: -25px;
 	}

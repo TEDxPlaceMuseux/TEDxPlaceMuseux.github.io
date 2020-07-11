@@ -9,6 +9,7 @@
 		<title>TEDxPlaceMuseux</title>
         <meta name=“viewport” content=“width=device-width, initial-scale=1”>
 		<link rel="stylesheet" href="CSS/screen.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 		<!-- favicons -->
@@ -31,14 +32,27 @@
 		          		<li><a href="schedule">Schedule</a></li> 
 		          		<li><a href="team">Meet the Team</a></li>
 		          		<li><a href="partners">Partners</a></li> 
+		          		<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
 	      	  		</div>
+
+	      	  		<script>
+	      	  			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+						function myFunction() {
+							var x = document.getElementById("myTopnav");
+							if (x.className === "topnav") {
+								x.className += " responsive";
+							} else {
+								x.className = "topnav";
+							}
+						}
+	      	  		</script>
           		</ul>
           	</nav>
         </header>
 
     	<div class="container">
 	        <div class="theme-wrapper">
-	        	<img src="Images/temp_theme.png" alt="Theme">
+	        	<img src="Images/temp_theme2.png" alt="Theme">
 	        </div>
 
 	        <div class="content-area group">
