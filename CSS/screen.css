@@ -158,6 +158,7 @@ p {
 /* Pop-up boxes need to be better designed on screen size/zoom*/
 
 
+
 @media screen and (min-width: 1080px) {
 	.pop-up {
 		padding-bottom: 25px;
@@ -395,12 +396,6 @@ button:focus {
 }
 
 /* I am so sorry for this garbage CS the tops/bottoms of the pop-up boxes aren't aligned because the 3 col layout as opposed to 4 col for team page*/
-
-.speakers-page .pop-up {
-	padding: 15px 15px 5px 15px;
-	height: 92%;
-}
-
 
 /* End of Speakers specific CSS */
 
