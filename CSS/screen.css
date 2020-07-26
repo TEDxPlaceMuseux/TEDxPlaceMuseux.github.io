@@ -264,23 +264,38 @@ p {
 	float: right;
 }
 
-.topnav .icon {
-	display: none;
-}
-
-@media screen and (max-width: 675px) {
-	.topnav a { display: none; }
-	.topnav .icon { display: block; }
-}
-
-@media screen and (max-width: 675px) {
-	.topnav .responsive a { 
+/*
+@media screen and (max-width: 720px) {
+	.nav-bar li {
 		display: block;
+		list-style: none;
+
+		content: "";
+		display: table;
+		clear: both;
+		zoom: 1;
 	}
-	.topnav .responsive a.icon { 
-		float: right;
-		text-align: right;
+
+	.main-nav {
+		position: absolute;
+		top: 2px;
+		right: 25px;
+		list-style-type: none;
+
 	}
+
+	.nav-bar-toggle {
+		position: absolute;
+		top: 2px;
+		right: 0px;
+
+	}
+
+}
+*/ 
+
+@media screen and (max-width: 675px) {
+	
 }
 
 /* end of responsive navbar */
@@ -370,7 +385,6 @@ button:focus {
 
 .speakers-page h2 {
 	font-size: 110%;
-	text-align: center;
 	margin-bottom: 10px;
 }
 
