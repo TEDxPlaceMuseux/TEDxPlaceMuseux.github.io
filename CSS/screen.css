@@ -51,6 +51,15 @@ h2 {
 	color: #b80000;
 }
 
+hr {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
 img {
 	width: 100%;
 	height: auto;
@@ -137,6 +146,15 @@ p {
 
 .remove-indent {
 	text-indent: 0;
+}
+
+.remove-margin-top {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.add-margin-top {
+	margin-top: 12.8px;
 }
 
 .small-print p{
