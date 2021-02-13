@@ -155,6 +155,46 @@ p {
 	font-size: 80%;
 }
 
+.sidebar {
+	padding: 0 0;
+	margin: 0px;
+	background-color: #ffe5e3;
+}
+
+.sidebar ul {
+	padding-top: 10px;
+	margin-bottom: 0;
+}
+
+.sidebar li {
+	font-size: 80%;
+}
+
+.get-tickets {
+	width: 50%;
+	margin: 20px auto;
+	display: block;
+	box-sizing: border-box;
+	background-color: #cf362b;
+	color: #fff;
+	padding: 10px 0;
+	border: 1px solid #9c0a00;
+	border-radius: 3px;
+	outline: none;
+	margin-bottom: 10px;
+}
+
+.get-tickets:hover,
+.get-tickets:focus {
+  border: 1px solid #9c0a00;
+  background-color: #9c0a00;
+}
+
+.get-tickets a {
+	color: #FFF;
+	text-decoration: none;
+}
+
 .learn-more a{
 	text-decoration: none;
 	font-size: 50%;
@@ -194,6 +234,10 @@ p {
 
 .add-margin-top {
 	margin-top: 12.8px;
+}
+
+.add-padding-bottom {
+	padding-bottom: 12.8px;
 }
 
 .small-print p{
