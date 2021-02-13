@@ -431,7 +431,7 @@ input[type="email"], input[type="text"] {
 	border: 1px solid #a1a1a1;
 }
 
-button {
+.email-form button {
 	width: 100%;
 	display: block;
 	box-sizing: border-box;
@@ -444,8 +444,8 @@ button {
 	margin-bottom: 10px;
 }
 
-button:hover,
-button:focus {
+.email-form button:hover,
+.email-form button:focus {
   border: 1px solid #535e3b;
   background-color: #798a56;
 }
