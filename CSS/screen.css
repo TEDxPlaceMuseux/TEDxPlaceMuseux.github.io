@@ -1,7 +1,42 @@
 /* github site */
 
+/* beginning of custom fonts */
+
+@font-face {
+	font-family: 'Airbnb-Cereal';
+	src: url('Fonts/AirbnbCerealBook.ttf') format('ttf');
+	src: url('Fonts/AirbnbCerealBook.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Airbnb-Cereal';
+	src: url('Fonts/AirbnbCerealMedium.ttf') format('ttf');
+	src: url('Fonts/AirbnbCerealMedium.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Airbnb-Cereal';
+	src: ('');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Airbnb-Cereal';
+	src: url('Fonts/AirbnbCerealLight.ttf');
+	src: url('Fonts/AirbnbCerealLight.woff');
+	font-weight: lighter;
+	font-style: normal;
+}
+}
+/* end of @font-face */
+
 html {
-	font-family: Tahoma, sans-serif;
+	font-family: Airbnb-Cereal, arial, sans-serif;
 }
 
 /* fixes pop-up box/text-size based on zooming in/out*/
@@ -144,6 +179,10 @@ p {
 	text-decoration: underline #b80000;
 }
 
+.lighter {
+	font-weight: lighter;
+}
+
 .remove-indent {
 	text-indent: 0;
 }
@@ -158,7 +197,7 @@ p {
 }
 
 .small-print p{
-	font-size: 40%;
+	font-size: 60%;
 	color: red;
 }
 
@@ -174,8 +213,6 @@ p {
 }
 
 /* Pop-up boxes need to be better designed on screen size/zoom*/
-
-
 
 @media screen and (min-width: 1080px) {
 	.pop-up {
@@ -448,6 +485,17 @@ button:focus {
 
 
 /* Partner specific CSS*/
+
+.partner-logo {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.partner-description {
+	padding: 25px 50px;
+	margin-bottom: 10px;
+}
 
 .perks-list ul {
 	text-indent: -5px;
